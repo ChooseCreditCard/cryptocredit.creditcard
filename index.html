@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>CryptoCredit.Creditcard – How Crypto-Backed Credit Works</title>
-  <meta name="description" content="Understand how crypto-backed credit and card products work: collateral, loan-to-value, liquidations, fees and risks. Neutral, documentation-style overview of crypto credit lines linked to cards." />
+  <title>CryptoCredit.Creditcard – Crypto-Linked Credit Cards Explained</title>
+  <meta name="description" content="Learn how crypto-linked credit cards work: conversion models, spreads, risk, compliance, stablecoins, token rewards, and what to check before choosing a crypto-friendly card." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://cryptocredit.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="CryptoCredit.Creditcard – Crypto-Backed Credit Explained" />
-  <meta property="og:description" content="Learn how crypto can be used as collateral for credit lines and cards: LTV, margin calls, liquidation paths, fees and reporting." />
+  <meta property="og:title" content="CryptoCredit.Creditcard – Crypto Credit Cards Explained" />
+  <meta property="og:description" content="Independent educational guide to crypto-connected credit cards, on/off ramp mechanics, fees, and risk." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cryptocredit.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CryptoCredit.Creditcard – Crypto-Backed Credit Explained" />
-  <meta name="twitter:description" content="Independent explanation of crypto-collateralized credit lines, card links, liquidation rules and risk considerations." />
+  <meta name="twitter:title" content="CryptoCredit.Creditcard – Crypto Credit Cards Explained" />
+  <meta name="twitter:description" content="What crypto credit cards actually do behind the scenes: conversion, stablecoins, spreads, rewards, risk." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -31,10 +31,8 @@
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind for utility classes -->
+  <!-- CSS + Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -45,200 +43,175 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">CryptoCredit.Creditcard</div>
-          <div class="brand-subtitle">Crypto-Backed Credit Explained</div>
+          <div class="brand-subtitle">Crypto-Linked Credit Cards Explained</div>
         </div>
       </div>
-      <nav class="nav-links" aria-label="Page navigation">
+      <nav class="nav-links">
         <a href="#overview">Overview</a>
         <a href="#mechanics">How It Works</a>
-        <a href="#compare">Compare</a>
+        <a href="#risks">Risks</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
+
     <!-- Breadcrumb -->
     <div class="cc-breadcrumb">
       <a href="https://choose.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
-      &nbsp;›&nbsp;
-      CryptoCredit.Creditcard
+      &nbsp;›&nbsp; CryptoCredit.Creditcard
     </div>
 
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>How Crypto-Backed Credit Lines Linked to Cards Work</h1>
+        <h1>How Crypto-Linked Credit Cards Actually Work</h1>
         <p class="hero-lead">
-          Some products let you post crypto as collateral and receive a credit line that can be linked to a card. This page explains the mechanics — from loan-to-value and liquidations to fees and repayment — in neutral, documentation-style language.
+          Crypto credit cards let you spend crypto through familiar Visa/Mastercard rails. Here’s how conversion, spreads, stablecoins, rewards and compliance really function behind the scenes.
         </p>
-        <a class="cta" href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore the Crypto &amp; Web3 Cards hub
+        <a class="cta"
+           href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore Crypto & Web3 Cards
         </a>
       </div>
     </section>
 
-    <!-- Overview -->
+    <!-- Section 1 -->
     <section id="overview" class="section">
-      <h2>What Is “Crypto Credit” in a Card Context?</h2>
-      <p>“Crypto credit” usually refers to a credit line that is secured by digital assets instead of traditional collateral. The user deposits crypto with a platform, which assigns a borrowing limit based on the value of that collateral.</p>
-      <p>In some product designs, this credit line is connected to a payment card, so card spending is effectively financed against the crypto position rather than an unsecured revolving line in the usual sense.</p>
+      <h2>What Is a Crypto Credit Card?</h2>
+      <p>These cards are traditional payment cards linked to a wallet or exchange, converting crypto to fiat at checkout. This makes them compatible with global card networks while allowing users to spend digital assets.</p>
+      <p>Most do <em>not</em> settle on-chain. Instead, the issuer performs internal conversion and uses standard banking rails for merchant settlement.</p>
     </section>
 
-    <!-- Mechanics -->
+    <!-- Section 2 -->
     <section id="mechanics" class="section">
-      <h2>Core Building Blocks of Crypto-Backed Credit</h2>
-      <p>Although implementations vary, many crypto-backed credit products share the same structural components:</p>
-      <ul class="list">
-        <li><strong>Collateral deposit</strong> – you transfer supported tokens or coins to the provider or smart contract.</li>
-        <li><strong>Loan-to-value (LTV)</strong> – the maximum borrowing amount is a fraction of the collateral’s value.</li>
-        <li><strong>Margin thresholds</strong> – specific LTV levels may trigger warnings, margin calls or liquidations.</li>
-        <li><strong>Interest and fees</strong> – borrowing rates, origination fees and card-related fees are defined in schedules.</li>
-        <li><strong>Repayment rules</strong> – how and when outstanding balances must be repaid to restore collateral headroom.</li>
+      <h2>How Crypto Conversions Happen</h2>
+      <p>When you tap the card, the issuer checks your crypto balance, converts an equivalent amount to fiat, and approves the transaction. The conversion can be:</p>
+      <ul class="list-disc list-inside small">
+        <li><strong>Real-time conversion</strong> (JIT)</li>
+        <li><strong>Pre-loaded</strong> conversions done earlier</li>
+        <li><strong>Stablecoin conversion</strong> for reduced volatility</li>
       </ul>
-      <p>When a card is attached, card transactions draw from the credit line, and repayments reduce that card-linked balance.</p>
+      <p>Spreads and fees vary by provider and can significantly affect real value versus advertised rewards.</p>
     </section>
 
+    <!-- Section 3 -->
+    <section id="risks" class="section">
+      <h2>Risks, Tax & Compliance</h2>
+      <p>Crypto spending may trigger taxable disposals depending on jurisdiction. Some cards generate dozens of micro-events per month. Always check your local rules.</p>
+      <p>Volatility also matters: asset value may rise or fall between loading and spending. Spreads, FX fees, and liquidity constraints further impact real cost.</p>
+    </section>
+
+    <!-- Comparison Block -->
     <section class="section">
-      <h2>Liquidations, Volatility and Collateral Management</h2>
-      <p>Because crypto prices can move quickly, platforms rely on automated rules to keep credit lines collateralized:</p>
-      <ul class="list">
-        <li>Price feeds or oracles track the value of the collateral in near real time.</li>
-        <li>If market moves push LTV above a threshold, the platform may require extra collateral or partial repayment.</li>
-        <li>If no action is taken, some or all collateral can be sold to cover the outstanding balance and fees.</li>
-      </ul>
-      <p>These mechanisms are described in platform documentation and can differ substantially between providers and jurisdictions.</p>
-    </section>
-
-    <section class="section">
-      <h2>How Crypto Credit Interacts With Card Usage</h2>
-      <p>When a card is used on top of a crypto-backed line, several flows come together:</p>
-      <ul class="list">
-        <li>Card transactions are authorized and settled through normal payment networks.</li>
-        <li>The resulting debits increase the borrowed amount on the crypto credit line.</li>
-        <li>Interest accrues on that borrowed amount, according to the specific pricing tables.</li>
-        <li>Repayments, either in fiat or crypto, reduce the outstanding credit and may free up collateral.</li>
-      </ul>
-      <p>In some setups, rewards or incentives may also be paid in tokens, which adds another layer of volatility and risk.</p>
-    </section>
-
-    <!-- Comparison table -->
-    <section id="compare" class="section">
-      <h2>Key Parameters to Compare in Crypto Credit Products</h2>
+      <h2>What to Compare</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
             <tr>
-              <th>Parameter</th>
-              <th>What to Look For</th>
+              <th>Feature</th>
+              <th>What to Check</th>
               <th>Why It Matters</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Collateral Types</td>
-              <td>Which assets are accepted and any concentration limits</td>
-              <td>Asset choice affects volatility and liquidation risk.</td>
+              <td>Conversion Model</td>
+              <td>JIT vs pre-loaded, stablecoins supported</td>
+              <td>Determines exposure to spreads and volatility.</td>
             </tr>
             <tr>
-              <td>Max &amp; Maintenance LTV</td>
-              <td>Borrowing limits and margin-call thresholds</td>
-              <td>Determines how much headroom you have before actions are triggered.</td>
+              <td>Spreads & Fees</td>
+              <td>Transparent fee table</td>
+              <td>Small spreads can exceed advertised rewards.</td>
             </tr>
             <tr>
-              <td>Liquidation Rules</td>
-              <td>How, when and at what discounts collateral is sold</td>
-              <td>Influences potential loss in fast-moving markets.</td>
+              <td>Rewards</td>
+              <td>Cash, points or tokens</td>
+              <td>Token rewards often fluctuate in value.</td>
             </tr>
             <tr>
-              <td>Interest &amp; Fee Schedule</td>
-              <td>Rates, origination fees, card fees and FX fees</td>
-              <td>Defines the total cost of borrowing against crypto.</td>
-            </tr>
-            <tr>
-              <td>Jurisdiction &amp; Reporting</td>
-              <td>Where the product is offered and how usage is reported</td>
-              <td>Has implications for consumer protection and regulatory frameworks.</td>
+              <td>Compliance</td>
+              <td>Tax reports, export options</td>
+              <td>Important for jurisdictions with taxable crypto disposals.</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="small">
-        For a broader view of crypto-linked cards and payment flows, visit
-        <a href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          the Crypto &amp; Web3 Cards hub on Choose.Creditcard
-        </a>.
-      </p>
     </section>
 
-    <!-- Cluster links -->
+    <!-- Cluster Links -->
     <section class="section">
-      <h2>Explore Related Crypto &amp; Web3 Microsites</h2>
+      <h2>Explore Related Crypto & Web3 Topics</h2>
       <div class="cluster-grid">
-        <a class="cluster-card" href="https://cryptopay.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_cryptopay">
+
+        <a class="cluster-card"
+           href="https://cryptopay.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_cryptopay">
           <h3>CryptoPay.Creditcard</h3>
-          <p>How crypto-linked card payments convert assets at the point of sale.</p>
+          <p>Detailed breakdown of conversion mechanics at checkout.</p>
         </a>
-        <a class="cluster-card" href="https://cryptocards.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_cryptocards">
+
+        <a class="cluster-card"
+           href="https://cryptocards.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_cryptocards">
           <h3>CryptoCards.Creditcard</h3>
-          <p>Overview of card products connected to wallets and exchanges.</p>
+          <p>General overview of crypto-enabled card structures.</p>
         </a>
-        <a class="cluster-card" href="https://chain.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_chain">
-          <h3>Chain.Creditcard</h3>
-          <p>On-chain transaction flows and settlement concepts.</p>
-        </a>
-        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
-          <h3>DefiPay.Creditcard</h3>
-          <p>Card products that route through DeFi protocols and pools.</p>
-        </a>
-        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+
+        <a class="cluster-card"
+           href="https://tokens.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
           <h3>Tokens.Creditcard</h3>
-          <p>How reward and governance tokens interact with credit structures.</p>
+          <p>How token-based rewards work in card ecosystems.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://virtualpay.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual card mechanics and wallet integrations.</p>
+        </a>
+
+        <a class="cluster-card"
+           href="https://defipay.creditcard/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
+          <h3>DefiPay.Creditcard</h3>
+          <p>Cards linked to DeFi balances and yield flows.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        CryptoCredit.Creditcard is an educational minisite within The CreditCard Collection by ronarn AS.
+        It explains crypto-linked card mechanics so you can evaluate real-world trade-offs.
+      </p>
+
+      <!-- HUB SNIPPET -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Crypto & Web3 Cards hub
         </a>
       </div>
     </section>
 
-    <!-- Collection section -->
-    <section class="section">
-      <h2>Part of The CreditCard Collection</h2>
-      <p class="small">
-        CryptoCredit.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a single concept in clear, factual language and connects readers to broader educational hubs.
-      </p>
-      <p class="small">
-        We do not issue cards, operate lending platforms or endorse specific assets. This page summarizes how crypto-backed credit and card links are typically described in public documentation.
-      </p>
-      <p class="small">
-        This site is informational only and does not provide financial, investment, tax or legal advice. Use official documentation and independent professional guidance for decisions about products or digital assets.
-      </p>
-
-      <!-- Crypto hub snippet -->
-      <p class="text-xs text-slate-500 mt-6">
-        This microsite is connected to the
-        <a href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=hub_crypto"
-           class="font-medium hover:text-slate-900">
-          Crypto &amp; Web3 Cards hub
-        </a>
-        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
-        Educational only – not an endorsement of any asset or provider.
-      </p>
-    </section>
-
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Want to See Crypto Credit in a Wider Context?</h2>
+      <h2>Ready to Explore Crypto-Connected Cards?</h2>
       <p class="small">
-        Use CryptoCredit.Creditcard to understand the mechanics of crypto-backed credit lines — then explore the Crypto &amp; Web3 Cards hub to see how different card-related designs fit into the broader ecosystem.
+        Compare crypto-friendly features, evaluate spreads, and explore emerging Web3 payment models.
       </p>
-      <a class="cta" href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Go to the Crypto &amp; Web3 Cards hub
+      <a class="cta"
+         href="https://choose.creditcard/crypto/?utm_source=cryptocredit.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to Crypto & Web3 Cards hub
       </a>
     </section>
+
   </main>
 
   <footer class="mini-footer">
     <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
-    <p class="mini-footer-contact">
-      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
-    </p>
+    <p class="mini-footer-contact">Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a></p>
   </footer>
 </body>
 </html>
